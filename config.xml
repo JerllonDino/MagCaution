@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget id		= "com.magcaution.MC"
+    version     = "0.1" >
+
+<icon src="img/icon1.png"/>
+
+<platform name="android">
+	<preference name="Orientation" value="landscape" />
+	<preference name="Fullscreen" value="true" />
+</platform>
+
+  <name>MagCaution</name>
+
+  <description>
+      A Natural Disaster and Accident Preparedness Game
+  </description>
+
+  <author email="jerllon03@gmail.com">
+      MagCaution Group
+  </author>
+
+</widget>
