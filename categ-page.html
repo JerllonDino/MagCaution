@@ -15,9 +15,15 @@
 		<!-- main content -->
 		<div class="container-fluid" id="page">
 			<!-- BACK button -->
-
-			<a href="home.html"><img src="img/exit.png" id="dir-up"></a>
-			<div class="row" style="margin-top: 5%;">
+			<br>
+			<div class="row">
+				<div class="col-xs-1">
+					<a href="home.html"><img src="img/exit.png" id="dir-up"></a>
+				</div>
+				<div class="col-xs-11"></div>
+			</div>
+			<hr>
+			<div class="row">
 				<div class="col-xs-1"></div>
 				<div class="col-xs-10">
 					<div class="row">
@@ -30,9 +36,7 @@
 								<a href="game-categ.html">
 									<div class="panel-body">
 										<center>
-											<img src="img/g1.png" class="gbod g1 img-responsive">
-											<img src="img/g2.png" class="gbod g2 img-responsive">
-											<img src="img/g3.png" class="gbod g3 img-responsive">	
+											<img src="img/g1.png" class="gbod g1 img-responsive">	
 										</center>
 									</div>
 								</a>
@@ -68,24 +72,6 @@
 			}
 		</script>
 		<!-- game category animation -->
-		<script>
-			$(document).ready(function(){
-				function gameCC1(){
-					$(".g1").css({"display":"block"});
-					$(".g3").css({"display":"none"});
-					setTimeout(gameCC2,300);
-				}
-				function gameCC2(){
-					$(".g1").css("display","none");
-					$(".g2").css("display","block");
-					setTimeout(gameCC3,300);
-				}
-				function gameCC3(){
-					$(".g2").css("display","none");
-					$(".g3").css("display","block");
-				}
-				setInterval(gameCC1,900);
-			});
-		</script>
+		
 	</body>
 	</html>
