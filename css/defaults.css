@@ -1,4 +1,4 @@
-html, body{
+/*html, body{
 	width: 100%;
 	height: 100%;
 	background-image: url("../img/main-bg.jpg");
@@ -8,12 +8,62 @@ html, body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     
+    }*/
+    .bodyintro {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        background-size: cover;
+        resize: both;
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/main-bg.jpg");
+        background-size: cover;
+        resize: both;
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .bgg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;;
+        z-index: -100;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        object-fit: fill;
+  }
+  .intro {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;;
+        z-index: -100;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        object-fit: fill;
 }
-body{
-	font-size: 100%;
-	line-height: 1.6875;
 
-}
 .game-categ-tag, .game-categ-icon{display: inline-block;}
 .game-categ-tag{width: 70%;}
 .game-categ-icon{ width: 100px;height: 100px; border-radius: 5%;}
@@ -63,4 +113,7 @@ a{text-decoration: none;color: black;}
 .modal-title{
     color: white;
     font-size: 18px;
+}
+* {
+    box-sizing: border-box;
 }
