@@ -9,6 +9,24 @@
 	background-attachment: fixed;
     
     }*/
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/bgg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+    #particles-js{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
     .bodyintro {
         margin: 0;
         padding: 0;
@@ -21,99 +39,62 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-    body{
+
+    .intro {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
         width: 100%;
-        height: 100%;
-        background-image: url("../img/main-bg.jpg");
-        background-size: cover;
-        resize: both;
-        background-position: top left;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        height: 100%;;
+        z-index: -100;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        object-fit: fill;
     }
-    .bgg {
+
+
+
+    .game-categ-tag, .game-categ-icon{display: inline-block;}
+    .game-categ-tag{width: 70%;}
+    .game-categ-icon{ width: 100px;height: 100px; border-radius: 5%;}
+    #title,#icon{color:rgb(131,3,3);font-size: 35pt;}
+    #icon{text-shadow: 2px 2px 12px white;}
+    .panel-heading{text-align: center;}
+    .gbod{width: 80%;}
+    .g2,.g3{display: none;}
+    a{text-decoration: none;color: black;}
+    #dir-up{position: fixed; top: 5%; left: 5%; width: 45px; height: 45px; z-index: 999;}
+    .gThumb{width: 70px;height: 70px;}
+    /*@media only screen and (min-width: )*/
+    .butt{
+        border: none;
+        color: white;
+        padding: 5% 20%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px;
+        cursor: pointer;
+    }
+    .modal{
         position: fixed;
         top: 50%;
         left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: 100%;
-        height: 100%;;
-        z-index: -100;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -o-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        object-fit: fill;
-  }
-  .intro {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: 100%;
-        height: 100%;;
-        z-index: -100;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -o-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        object-fit: fill;
-}
-
-.game-categ-tag, .game-categ-icon{display: inline-block;}
-.game-categ-tag{width: 70%;}
-.game-categ-icon{ width: 100px;height: 100px; border-radius: 5%;}
-#title,#icon{color:rgb(131,3,3);font-size: 35pt;}
-#icon{text-shadow: 2px 2px 12px white;}
-.panel-heading{text-align: center;}
-.gbod{width: 80%;}
-.g2,.g3{display: none;}
-a{text-decoration: none;color: black;}
-#dir-up{position: fixed; top: 5%; left: 5%; width: 45px; height: 45px; z-index: 999;}
-.gThumb{width: 70px;height: 70px;}
-
-/*@media only screen and (min-width: )*/
-.button-red {
-    background-color: #ff0037;
-    border: none;
-    color: white;
-    padding: 5% 20%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0px;
-    cursor: pointer;
-}
-.button-blue {
-    background-color: #05aabc;
-    border: none;
-    color: white;
-    padding: 5% 20%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0px;
-    cursor: pointer;
-}
-.modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.modal-content{
-    background-color: #3d3d3d;
-}
-.modal-title{
-    color: white;
-    font-size: 18px;
-}
-* {
-    box-sizing: border-box;
-}
+        transform: translate(-50%, -50%);
+    }
+    .modal-content{
+        background-color: #3d3d3d;
+    }
+    .modal-title{
+        color: white;
+        font-size: 18px;
+    }
+/*        * {
+            box-sizing: border-box;
+            }*/
