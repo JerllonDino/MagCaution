@@ -7,12 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/defaults.css">
 </head>
 <body>
-
-	<video autoplay muted loop class="bgg">
-		<source src="subm.mp4" type="video/mp4">
-		</video>
-  <div id="particles-js" style="background-color: #2c2e43"></div>
-		<!-- main content -->
+	<div id="particles-js" style="background-color: #2c2e43"></div>
 	<div class="container-fluid" id="page">
 		<!-- BACK button -->
 		<a href="home.html"><img src="img/exit.png" id="dir-up"></a>
@@ -25,12 +20,13 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h3><b>Games</b></h3>
-
 							</div>
 							<a href="game-categ.html">
 								<div class="panel-body">
 									<center>
 										<img src="img/g1.png" class="gbod g1 img-responsive">
+										<img src="img/g2.png" class="gbod g2 img-responsive">
+										<img src="img/g3.png" class="gbod g3 img-responsive">	
 									</center>
 								</div>
 							</a>
@@ -59,6 +55,7 @@
 	<script type="text/javascript" src="js/particles.js"></script>
 	<script type="text/javascript" src="js/particles.min.js"></script>
 	<script type="text/javascript" src="js/app2.js"></script>
+	<script type="text/javascript" src = "js/fastclick.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 				//registering the back button
@@ -66,11 +63,31 @@
 			});
 
 		function onBackKeyDown(e) {
-			window.location.href = "index.html";
+			window.location.href = "home.html";
 		}
+		screen.orientation.lock('landscape');
 	</script>
 
-	
+	<!-- game category animation -->
+	<script>
+		$(document).ready(function(){
+			function gameCC1(){
+				$(".g1").css({"display":"block"});
+				$(".g3").css({"display":"none"});
+				setTimeout(gameCC2,300);
+			}
+			function gameCC2(){
+				$(".g1").css("display","none");
+				$(".g2").css("display","block");
+				setTimeout(gameCC3,300);
+			}
+			function gameCC3(){
+				$(".g2").css("display","none");
+				$(".g3").css("display","block");
+			}
+			setInterval(gameCC1,900);
+		});
+	</script>
 	
 </body>
 </html>
