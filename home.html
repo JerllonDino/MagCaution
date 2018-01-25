@@ -63,6 +63,7 @@
 <script type="text/javascript" src="js/particles.js"></script>
 <script type="text/javascript" src="js/particles.min.js"></script>
 <script type="text/javascript" src="js/app1.js"></script>
+<script type="text/javascript" src = "js/fastclick.min.js"></script>
 
 <script>
   /*buttons*/
@@ -81,6 +82,8 @@
   });
   function onBackKeyDown(e) {
    $('.modal').modal('show');
+   var attachFastClick = Origami.fastclick;
+   attachFastClick(document.body);
  }
 </script>
 </body>

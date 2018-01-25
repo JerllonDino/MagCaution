@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" type="text/css" href="css/defaults.css">
- <script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
- <script type="text/javascript">
-  $(document).ready(function(){
-   setTimeout(function(){
-                location.href="home.html";//redirect to home
-              },5000);
- });
-</script>
+	<link rel="stylesheet" type="text/css" href="css/defaults.css">
+	<script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
 </head>
 <body class="bodyintro">
-  <div class="container">
-   <video autoplay muted loop webkit-playsinline class="intro" id="loads">
-    <source src="yes.mp4" type="video/mp4">
-    </video>
-  </div>
-</body>
-</html>
+	<div class="container">
+		<video autoplay muted loop webkit-playsinline class="intro" id="loads">
+			<source src="yes.mp4" type="video/mp4">
+			</video>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				setTimeout(function(){
+                location.href="home.html";//redirect to home
+            },4000);
+			});
+		</script>
+	</body>
+	</html>

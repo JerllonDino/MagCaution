@@ -9,49 +9,52 @@
 	<script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
 </head>
 <body>
-<!-- content -->
-<div class="container-fluid">
-	<!-- BACK button -->
-	<div class="row">
-		<div class="col-xs-1">
-			<a href="game-categ.html"><img src="img/exit.png" id="dir-up"></a>
-		</div>
-		<div class="col-xs-11"></div>
-	</div>
-	<div class="row">
-	<div class="col-sm-3"></div>
-		<div class="col-sm-6">
-			<div class="panel panel-info">
-				<div class="panel-body">
-					<img src="img/game-categ/accident/office.png" class="game-categ-icon">
-					<img src="img/game-categ/accident/tag-office.png" class="game-categ-tag">
-				</div>
-			</div>
-			<div class="panel panel-info">
-				<div class="panel-body">
-					<img src="img/game-categ/accident/school.png" class="game-categ-icon">
-					<img src="img/game-categ/accident/tag-school.png" class="game-categ-tag">
-				</div>
-			</div>
-			<div class="panel panel-info">
-				<div class="panel-body">
-					<img src="img/game-categ/accident/street.png" class="game-categ-icon">
-					<img src="img/game-categ/accident/tag-street.png" class="game-categ-tag">
+	<!-- content -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2><b>GAMES</b></h2>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="col-sm-3"></div>
-</div><!--container-->
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<div class="panel panel-info">
+					<!-- <div class="panel-body"> -->
+						<img src="img/game-categ/accident/office.png" class="game-categ-icon">
+						<img src="img/game-categ/accident/tag-office.png" class="game-categ-tag">
+					<!-- </div> -->
+				</div>
+				<div class="panel panel-info">
+					<!-- <div class="panel-body"> -->
+						<img src="img/game-categ/accident/school.png" class="game-categ-icon">
+						<img src="img/game-categ/accident/tag-school.png" class="game-categ-tag">
+					<!-- </div> -->
+				</div>
+				<div class="panel panel-info">
+					<!-- <div class="panel-body"> -->
+						<img src="img/game-categ/accident/street.png" class="game-categ-icon">
+						<img src="img/game-categ/accident/tag-street.png" class="game-categ-tag">
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3"></div>
+	</div><!--container-->
+	<script type="text/javascript" src = "js/fastclick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//registering the back button
+			document.addEventListener("backbutton", onBackKeyDown, false); 
 
-<script type="text/javascript">
-$(document).ready(function() {
-//registering the back button
- document.addEventListener("backbutton", onBackKeyDown, false); });
-
-function onBackKeyDown(e) {
- window.location.href = "game-categ.html";
-}
-</script>
+		});
+		function onBackKeyDown(e) {
+			window.location.href = "game-categ.html";
+		}
+	</script>
 </body>
 </html>
