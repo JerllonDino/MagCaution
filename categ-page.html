@@ -70,27 +70,7 @@
 		}
 	</script>
 
-	<!-- game category animation -->
-	<script>
-		$(document).ready(function(){
-			function gameCC1(){
-				$(".g1").css({"display":"block"});
-				$(".g3").css({"display":"none"});
-				setTimeout(gameCC2,300);
-			}
-
-			function gameCC2(){
-				$(".g1").css("display","none");
-				$(".g2").css("display","block");
-				setTimeout(gameCC3,300);
-			}
-			function gameCC3(){
-				$(".g2").css("display","none");
-				$(".g3").css("display","block");
-			}
-			setInterval(gameCC1,900);
-		});
-	</script>
+	
 	
 </body>
 </html>
