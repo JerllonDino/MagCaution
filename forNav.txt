@@ -1,0 +1,87 @@
+<!-- g1 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/defaults.css">
+	<script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
+	<style>
+		#hidden{
+			position: fixed;
+			height: 25px;
+			width: 100%;
+			border: 1px solid red;
+			background-color: red;
+			transition: top 1s;
+		}
+		#nav{
+			position: fixed;
+			top: -200px;
+			height: 200px;
+			width: 100%;
+			border: 1px solid green;
+			transition: top 1s;
+			background-color: powderblue;
+			padding: 20px;
+		}
+		.q,.w,.e,.r{
+			width: 150px;
+			height: 150px;
+		}
+		
+		.q{
+			background-color: red;
+		}
+		.w{
+			background-color: blue;
+		}
+		.e{
+			background-color: green;
+		}
+		.r{
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="hidden">
+		
+	</div>
+	<div id="nav">
+		<div class="row"><center>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">
+				<div class="panel-body q"></div>
+			</div>
+			<div class="col-sm-2">
+				<div class="panel-body w"></div>
+			</div>
+			<div class="col-sm-2">
+				<div class="panel-body e"></div>
+			</div>
+			<div class="col-sm-2">
+				<div class="panel-body r"></div>
+			</div>
+			<div class="col-sm-2"></div>
+		</div></center>
+	</div>
+<script>
+	var openNav = false;
+	$("#hidden").click(function(){
+		if (openNav==false){
+			$("#nav").css("top","0");
+			$("#hidden").css("top","200px");	
+			openNav = true;
+		}else{
+			$("#nav").css("top","-200px");
+			$("#hidden").css("top","0");	
+			openNav = false;
+		}
+		
+		
+	});
+</script>
+</body>
+</html>

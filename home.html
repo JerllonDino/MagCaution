@@ -5,18 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/defaults.css">
-<!--   <link rel="stylesheet" type="text/css" href="css/loader.css"> -->
 </head>
 <body>
-<!--   <div class="container">
-   <video autoplay muted loop webkit-playsinline class="intro" id="loads">
-  <source src="yes.mp4" type="video/mp4">
-</video>
-</div>
--->
-<video autoplay muted loop class="bgg" id="video">
-  <source src="main.mp4" type="video/mp4">
-  </video>
+  <div id="particles-js" style="background-color: #48344c"></div>
   <div class = "container-fluid" id="page">
    <!-- background image needed-->
    <div class="row">
@@ -38,7 +29,6 @@
     </div>
     <div class="col-xs-4"></div>
   </div>
-
 </div>
 <div class="container">
   <!-- Modal -->
@@ -58,37 +48,36 @@
         </div> -->
         <div class="modal-body">
         	<center>
-            <button type="button" class="button-red exit">Yes</button>
-            <button type="button" class="button-blue" data-dismiss="modal">No</button>
+            <button type="button" class="butt exit" style="background-color: #ff0037;">Yes</button>
+            <button type="button" class="butt" style="background-color: #05aabc;" data-dismiss="modal">No</button>
           </center>
         </div>
       </div>
       
     </div>
   </div>
-  
 </div>
-
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
-<!-- <script src="js/loader.js"></script> -->
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript" src="js/app1.js"></script>
+
 <script>
-  setTimeout(function(){
-    document.getElementById("video").play();
-  }, 5100);
   /*buttons*/
   $(document).ready(function(){
     $('.home-btn').on("mouseover",function(){
       $(this).css('width',"75%");
     });
     $('.home-btn').on("mouseout",function(){
-      $(this).css('width',"70%");
+      $(this).css('width',"100%");
     });
     $('.exit').click(function(){
       navigator.app.exitApp();
     });
     document.addEventListener("backbutton", onBackKeyDown, false);
+
   });
   function onBackKeyDown(e) {
    $('.modal').modal('show');

@@ -5,49 +5,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/defaults.css">
-	<script type="text/javascript" src="cordova.js"></script>
-	<script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
+
 
 </head>
 <body>
-
-<!-- content -->
-<div class="container-fluid">
-<!-- BACK button -->
-	<a href="categ-page.html"><img src="img/exit.png" id="dir-up"></a>
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h2><b>GAMES</b></h2>
+	<div id="particles-js"></div>
+	<!-- content -->
+	<div class="container-fluid">
+		<!-- BACK button -->
+		<a href="categ-page.html"><img src="img/exit.png" id="dir-up"></a>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2><b>GAMES</b></h2>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-2"></div>
-		<div class="col-xs-4">
-			<a href="accidentGames.html">
-				<img src="img/game-accidents.png" class="gbod img-responsive">
-			</a>
+		<div class="row">
+			<center>
+				<div class="col-xs-4">
+					<a href="accidentGames.html">
+						<img src="img/game-accidents.png" class="gbod img-responsive">
+					</a>
+				</div>
+				<div class="col-xs-4">
+					<a href="disasterGames.html">
+						<img src="img/game-disasters.png" class="gbod img-responsive">
+					</a>
+				</div>
+				<div class="col-xs-4">
+					<a href="#">
+						<img src="img/first-aid1.png" class="gbod img-responsive">
+					</a>
+				</div>
+			</center>
 		</div>
-		<div class="col-xs-4">
-			<a href="disasterGames.html">
-				<img src="img/game-disasters.png" class="gbod img-responsive">
-			</a>
-		</div>
-		<div class="col-xs-2"></div>
-	</div>
 
-</div>
-<script type="text/javascript">
-$(document).ready(function() {
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/particles.js"></script>
+	<script type="text/javascript" src="js/particles.min.js"></script>
+	<script type="text/javascript" src="js/app4.js"></script>
+	<script type="text/javascript">
+	<script type="text/javascript">
+		$(document).ready(function() {
 //registering the back button
- document.addEventListener("backbutton", onBackKeyDown, false); });
+document.addEventListener("backbutton", onBackKeyDown, false); });
 
-function onBackKeyDown(e) {
-    window.location.href = "categ-page.html";
-}
-</script>
+		function onBackKeyDown(e) {
+			window.location.href = "categ-page.html";
+		}
+	</script>
 </body>
 </html>
