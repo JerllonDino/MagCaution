@@ -13,7 +13,16 @@
 	<!-- content -->
 	<div class="container-fluid">
 		
-		<div class="row">
+		<div class="nav">
+			<div class="row">
+				<div class="col-xs-1" style="border-right: 1px solid grey">
+					<center><a href="categ-page.html"><h3><b>BACK</b></h3></a></center>
+				</div>
+				<div class="col-xs-11"></div>
+			</div>
+		</div>
+		
+		<div class="row full">
 			<center>
 				<div class="col-xs-4">
 					<a href="accidentGames.html">
@@ -44,7 +53,6 @@
 //registering the back button
 document.addEventListener("backbutton", onBackKeyDown, false); 
 });
-
 		function onBackKeyDown(e) {
 			window.location.href = "categ-page.html";
 		}
