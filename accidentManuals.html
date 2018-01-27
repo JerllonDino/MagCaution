@@ -1,91 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <title>Accident Manuals</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-  <!-- Link Swiper's CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/defaults.css">
   <link rel="stylesheet" href="dist/css/swiper.min.css">
 
-  <!-- Demo styles -->
-  <style>
-  html, body {
-    position: relative;
-    height: 100%;
-  }
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color:#000;
-    margin: 0;
-    padding: 0;
-  }
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    /*align-items: center;*/
-  }
-</style>
 </head>
 <body>
+  <!-- content -->
 
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-color: #7799d1;"><h1>Whenever you're going on a camping trip, always make sure someone who's not on the trip knows where you're going and when you'll be back.</h1></div>
-      <div class="swiper-slide" style="background-color: #80ce82;"><h1>If you ever come across a pack of wolves in the wild, the worst thing you can possibly do is look them in the eyes.</h1></div>
-      <div class="swiper-slide" style="background-color: #ccc97e;">Slide 3</div>
-      <div class="swiper-slide" style="background-color: #c487c4;">Slide 4</div>
-      <div class="swiper-slide" style="background-color: #7799d1;">Slide 5</div>
-      <div class="swiper-slide" style="background-color: #80ce82;">Slide 6</div>
-      <div class="swiper-slide" style="background-color: #ccc97e;">Slide 7</div>
-      <div class="swiper-slide" style="background-color: #c487c4;">Slide 8</div>
-      <div class="swiper-slide" style="background-color: #7799d1;">Slide 9</div>
-      <div class="swiper-slide" style="background-color: #80ce82;">Slide 10</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2><b>Manuals</b></h2>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="dist/js/swiper.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-      },
-    });
-    $(document).ready(function() {
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+              <div class="panel panel-info">
+                <!-- <div class="panel-body"> -->
+                  <img src="img/game-categ/accident/office.png" class="game-categ-icon">
+                  <img src="img/game-categ/accident/tag-office.png" class="game-categ-tag">
+                  <!-- </div> -->
+                </div>
+                <div class="panel panel-info">
+                  <!-- <div class="panel-body"> -->
+                    <img src="img/game-categ/accident/school.png" class="game-categ-icon">
+                    <img src="img/game-categ/accident/tag-school.png" class="game-categ-tag">
+                    <!-- </div> -->
+                  </div>
+                  <div class="panel panel-info">
+                    <!-- <div class="panel-body"> -->
+                      <img src="img/game-categ/accident/street.png" class="game-categ-icon">
+                      <img src="img/game-categ/accident/tag-street.png" class="game-categ-tag">
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3"></div>
+              </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div>
+        </div><!--container-->
+        <script src="dist/js/swiper.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            var swiper = new Swiper('.swiper-container', {
+              pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+              },
+            });
       //registering the back button
       document.addEventListener("backbutton", onBackKeyDown, false); 
-    });
 
-    function onBackKeyDown(e) {
-      window.location.href = "manual-categ.html";
-    }
-  </script>
-</body>
-</html>
+    });
+          function onBackKeyDown(e) {
+            window.location.href = "manual-categ.html";
+          }
+        </script>
+      </body>
+      </html>
