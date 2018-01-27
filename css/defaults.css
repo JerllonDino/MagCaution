@@ -65,7 +65,7 @@
     #title,#icon{color:rgb(131,3,3);font-size: 35pt;}
     #icon{text-shadow: 2px 2px 12px white;}
     .panel-heading{text-align: center;}
-    .gbod{width: 80%;position: absolute; top: 30%;left: 10%;right: 10%;}
+    .gbod{width: 80%;, position: absolute; top: 0; bottom: 0;}
     .g2,.g3{display: none;}
     a{text-decoration: none;color: black;}
     #dir-up{position: fixed; top: 5%; left: 5%; width: 45px; height: 45px; z-index: 999;}
@@ -95,8 +95,6 @@
         color: white;
         font-size: 18px;
     }
-    .nav{position: absolute; top: 0;left: 0;right: 0;background-color: red;}
-    .full{position: absolute;top: 10%; left: 0; right: 0;}
 /*        * {
             box-sizing: border-box;
             }*/
