@@ -21,10 +21,10 @@
             <div class="col-sm-6">
               <div class="panel panel-info">
                 <!-- <div class="panel-body"> -->
-                <a href='acc1.html'>
-                  <img src="img/game-categ/accident/office.png" class="game-categ-icon">
-                  <img src="img/game-categ/accident/tag-office.png" class="game-categ-tag">
-                </a>
+                  <a href='acc1.html'>
+                    <img src="img/game-categ/accident/office.png" class="game-categ-icon">
+                    <img src="img/game-categ/accident/tag-office.png" class="game-categ-tag">
+                  </a>
                   <!-- </div> -->
                 </div>
                 <div class="panel panel-info">
@@ -51,7 +51,11 @@
         <script src="dist/js/swiper.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
         <script type="text/javascript">
+          $(function() {
+            FastClick.attach(document.body);
+          });
           $(document).ready(function() {
             var swiper = new Swiper('.swiper-container', {
               pagination: {

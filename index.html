@@ -1,24 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/defaults.css">
-	<script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
 </head>
-<body class="bodyintro">
-	<div class="container">
-		<video autoplay muted loop webkit-playsinline class="intro" id="loads">
-			<source src="yes.mp4" type="video/mp4">
-			</video>
+<body>
+	<div id="particles-js" style="background-color: #48344c"></div>
+	<div class = "container-fluid" id="page">
+		<!-- background image needed-->
+		<div class="row">
+			<div class="col-xs-4"></div>
+			<div class="col-xs-4">
+				<center>
+					<h1 id="icon"><strong>MAG<br>Caution</strong></h1><!-- to be replaced by app icon -->
+				</center>
+			</div>
+			<div class="col-xs-4"></div>
 		</div>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				setTimeout(function(){
-                location.href="home.html";//redirect to home
-            },4000);
-			});
-		</script>
-	</body>
-	</html>
+		<div class="row">
+			<div class="col-xs-4"></div>
+			<div class="col-xs-4">
+				<center>
+					<a href="categ-page.html"><img src="img/start-btn.png" class="home-btn img-responsive" style="margin-top: 10%"></a><br>
+					<img src="img/exit-btn.png" class="home-btn img-responsive" data-toggle="modal" data-target="#myModal">
+				</center>
+			</div>
+			<div class="col-xs-4"></div>
+		</div>
+	</div>
+	<div class="container">
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<center>
+							<p class="modal-title">Exit App?</p>
+						</center>
+					</div>
+<!--         <div class="modal-body">
+          <p>Some text in the modal.</p>
+      </div> -->
+      <div class="modal-body">
+      	<center>
+      		<button type="button" class="butt exit" style="background-color: #ff0037;">Yes</button>
+      		<button type="button" class="butt" style="background-color: #05aabc;" data-dismiss="modal">No</button>
+      	</center>
+      </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript" src="js/app1.js"></script>
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script>
+	$(function() {
+		FastClick.attach(document.body);
+	});
+	$(document).ready(function(){
+		document.addEventListener("backbutton", onBackKeyDown, false);
+		function onBackKeyDown(e) {
+			$('.modal').modal('show');
+		}
+		/*buttons*/
+		$('.home-btn').on("mouseover",function(){
+			$(this).css('width',"75%");
+		});
+		$('.home-btn').on("mouseout",function(){
+			$(this).css('width',"100%");
+		});
+		$('.exit').click(function(){
+			navigator.app.exitApp();
+		});
+
+	});
+
+</script>
+</body>
+</html>

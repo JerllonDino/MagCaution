@@ -10,42 +10,42 @@
 
   <!-- Demo styles -->
   <style>
-    html, body {
-      position: relative;
-      height: 100%;
-    }
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
+  html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+</style>
 </head>
 <body>
   <!-- Swiper -->
@@ -68,9 +68,12 @@
 
   <!-- Swiper JS -->
   <script src="dist/js/swiper.min.js"></script>
-
+  <script type="text/javascript" src = "js/fastclick.js"></script>
   <!-- Initialize Swiper -->
   <script>
+    $(function() {
+      FastClick.attach(document.body);
+    });
     var swiper = new Swiper('.swiper-container', {
       pagination: {
         el: '.swiper-pagination',
@@ -78,12 +81,13 @@
       },
     });
     $(document).ready(function() {
-//registering the back button
-      document.addEventListener("backbutton", onBackKeyDown, false); });
+        //registering the back button
+        document.addEventListener("backbutton", onBackKeyDown, false); 
+      });
 
-      function onBackKeyDown(e) {
-        window.location.href = "manual-categ.html";
-      }
+    function onBackKeyDown(e) {
+      window.location.href = "manual-categ.html";
+    }
   </script>
 </body>
 </html>

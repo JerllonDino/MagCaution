@@ -45,8 +45,11 @@
 	<script type="text/javascript" src="js/particles.js"></script>
 	<script type="text/javascript" src="js/particles.min.js"></script>
 	<script type="text/javascript" src="js/app3.js"></script>
-	<script type="text/javascript" src = "js/fastclick.min.js"></script>
+	<script type="text/javascript" src = "js/fastclick.js"></script>
 	<script type="text/javascript">
+		$(function() {
+			FastClick.attach(document.body);
+		});
 		$(document).ready(function() {
 				//registering the back button
 				document.addEventListener("backbutton", onBackKeyDown, false); 
