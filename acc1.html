@@ -2,63 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Accident Manuals</title>
+  <title>Disaster Manuals</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/defaults.css">
   <link rel="stylesheet" href="dist/css/swiper.min.css">
-
-  <!-- Demo styles -->
+  <link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
   <style>
-  html, body {
-    position: relative;
+  .panel-body p{
+    font-size: 14px; 
+    text-indent: 50px;
+  }
+  .content{
     height: 100%;
-  }
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color:#000;
-    margin: 0;
-    padding: 0;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    /*align-items: center;*/
   }
 </style>
 </head>
 <body>
-  <div class="container-fluid">
-    <!-- Swiper -->
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2><b>Office</b></h2>
-          </div>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col-xs-12">
+  <div id="fullpage">
+    <div class="section">
+      <div class="content">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-color: #7799d1;"><h1>Don't put your feet up on a car's dashboard. Airbags go off like small bombs and can easily break both of your legs.</h1></div>
+            <div class="swiper-slide">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="panel panel-primary" style="height: 100%">
+                      <div class="panel-heading">
+                        <h4>Earthquake</h4>
+                      </div>
+                      <div class="panel-body">
+                        <p>An earthquake is the sudden, rapid shaking of the earth, caused by the breaking and shifting of subterranean rock as it releases strain that has accumulated over a long time. Initial mild shaking may strengthen and become extremely violent within seconds. Additional earthquakes, called aftershocks, may follow the initial earthquake. Most are smaller than the initial earthquake but larger magnitude aftershocks also occur.  Earthquakes may cause household items to become dangerous projectiles; cause buildings to move off foundations or collapse, damage utilities, roads and structures such as bridges and dams, or cause fires and explosions. They may also trigger landslides, avalanches, and tsunamis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="swiper-slide" style="background-color: #80ce82;"><h1>Whenever you're going on a camping trip, always make sure someone who's not on the trip knows where you're going and when you'll be back.</h1></div>
             <div class="swiper-slide" style="background-color: #ccc97e;"><h1>If you're in for a long drive at night, listen to comedians. It's impossible to fall asleep while laughing.</h1></div>
             <div class="swiper-slide" style="background-color: #c487c4;"><h1>Sitting in the back of a plane makes you 40% more likely to survive a crash.</h1></div>
@@ -69,19 +50,65 @@
             <div class="swiper-slide" style="background-color: #7799d1;">Slide 9</div>
             <div class="swiper-slide" style="background-color: #80ce82;">Slide 10</div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="content">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h4>Landslides</h4>
+                      </div>
+                      <div class="panel-body">
+                        <p>An earthquake is the sudden, rapid shaking of the earth, caused by the breaking and shifting of subterranean rock as it releases strain that has accumulated over a long time. Initial mild shaking may strengthen and become extremely violent within seconds. Additional earthquakes, called aftershocks, may follow the initial earthquake. Most are smaller than the initial earthquake but larger magnitude aftershocks also occur.  Earthquakes may cause household items to become dangerous projectiles; cause buildings to move off foundations or collapse, damage utilities, roads and structures such as bridges and dams, or cause fires and explosions. They may also trigger landslides, avalanches, and tsunamis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-color: #80ce82;"><h1>Whenever you're going on a camping trip, always make sure someone who's not on the trip knows where you're going and when you'll be back.</h1></div>
+            <div class="swiper-slide" style="background-color: #ccc97e;"><h1>If you're in for a long drive at night, listen to comedians. It's impossible to fall asleep while laughing.</h1></div>
+            <div class="swiper-slide" style="background-color: #c487c4;"><h1>Sitting in the back of a plane makes you 40% more likely to survive a crash.</h1></div>
+            <div class="swiper-slide" style="background-color: #7799d1;"><h1>If you're about to get hit by a car and can't jum[ sideways, jump up! it'll give you a better chance of surviving.</h1></div>
+            <div class="swiper-slide" style="background-color: #80ce82;">Slide 6</div>
+            <div class="swiper-slide" style="background-color: #ccc97e;">Slide 7</div>
+            <div class="swiper-slide" style="background-color: #c487c4;">Slide 8</div>
+            <div class="swiper-slide" style="background-color: #7799d1;">Slide 9</div>
+            <div class="swiper-slide" style="background-color: #80ce82;">Slide 10</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Swiper JS -->
   <script src="dist/js/swiper.min.js"></script>
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
-  <!-- Initialize Swiper -->
+  <script type="text/javascript" src="js/javascript.fullPage.js"></script>
   <script>
+    fullpage.initialize('#fullpage', {
+      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+      menu: '#menu',
+      css3:true
+    });
+    /*Initialize Swiper*/
     var swiper = new Swiper('.swiper-container', {
+      loop:true,
+      freeModeSticky:true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       pagination: {
         el: '.swiper-pagination',
         dynamicBullets: true,

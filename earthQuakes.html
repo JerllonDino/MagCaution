@@ -23,7 +23,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-xs-12">
 				<!-- <div class="col-xs-3"> -->
 					<div class="panel panel-info">
 						<div class="panel-heading">
@@ -35,7 +35,7 @@
 					</div>
 					<!-- </div> -->
 				</div>
-				<div class="col-md-12">
+				<div class="col-xs-12">
 					<div class="panel panel-info">
 						<div class="panel-heading">
 							<h4>What To Do?</h4>
@@ -52,21 +52,22 @@
 					</div>
 				</div>
 			</div>
-			<script type="text/javascript" src="cordova.js"></script>
-			<script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
-			<script type="text/javascript" src="js/fastclick.js"></script>
-			<script type="text/javascript">
-				$(function() {
-					FastClick.attach(document.body);
-				}); 
-				$(document).ready(function() {
+		</div>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src = "js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/fastclick.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				FastClick.attach(document.body);
+			}); 
+			$(document).ready(function() {
 					//registering the back button
 					document.addEventListener("backbutton", onBackKeyDown, false); 
 				});
 
-				function onBackKeyDown(e) {
-					window.location.href = "disasterManual.html";
-				}
-			</script>
-		</body>
-		</html>
+			function onBackKeyDown(e) {
+				window.location.href = "disasterManual.html";
+			}
+		</script>
+	</body>
+	</html>
